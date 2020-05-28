@@ -11,7 +11,8 @@ body {
     background: #4a465b;
 }
 .contenedor {
-    width: 1000px;
+    width: 90%;
+    max-width: 1000px;
     margin: 20px auto;
     overflow: hidden;
 }
@@ -40,12 +41,16 @@ header nav ul li a:hover{
    color: #fff; 
 }
 .main{
-    width: 7000px;
+    width: 70%;
     background: #fff;
     float: left;
 }
+.main .imagen{
+    width: 100%;
+}
 .main .imagen img{
-    width: 20px;
+    width: 500px;
+    height: 500px;
     vertical-align: top;
 }
 .main .post {
@@ -60,7 +65,7 @@ header nav ul li a:hover{
    line-height: 27px; 
 }
 aside {
-    width: 300px;
+    width: 30%;
     background: #161f26;
     padding: 20px;
     color: #fff;
@@ -92,10 +97,22 @@ aside .widget p {
     line-height: 27px;
 }
 footer {
-    width: 1000px;
+    width: 70%;
     overflow: hidden;
     background: #000;
     color: #fff;
     padding: 15px 0;
     text-align: center;
+}
+
+@media scree and (max-width:800px) {
+    .main {
+        width: 100%;
+    }
+    aside {
+       width: 100%; 
+    }
+    footer {
+        width: 100%;
+    }
 }
